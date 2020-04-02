@@ -25,6 +25,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
+import java.awt.Toolkit;
 
 @SuppressWarnings("serial")
 public class Index extends JFrame {
@@ -55,6 +56,7 @@ public class Index extends JFrame {
 	 * Create the frame.
 	 */
 	public Index() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage(Index.class.getResource("/ico/iconeBin.png")));
 		setTitle("Calculadora Bin\u00E1ria");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(0, 0, 500, 400);
